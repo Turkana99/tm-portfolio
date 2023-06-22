@@ -1,0 +1,342 @@
+<!--Jumbotron-->
+<div class="jumbotron container-fluid d-flex flex-column align-items-center">
+  <div class="my_video">
+    <video  loop="true" #myVideo (canplay)="myVideo.play()" (loadedmetadata)="myVideo.muted=true">
+      <source src="../../assets/images/video1.mp4" type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
+  </div>
+  <!--My Photo-->
+  <div class="my_info">
+    <!-- <div class="d-flex justify-content-center">
+      <div class="gallery">
+        <img src="../../assets/images/imageN.png" alt="a hot air balloon" />
+        <img
+          src="../../assets/images/LogoN4.png"
+          alt="a sky photo of an old city"
+        />
+        <img src="../../assets/images/imageN.png" alt="a small boat" />
+        <img src="../../assets/images/LogoN4.png" alt="a forest" />
+      </div>
+    </div> -->
+    <div class="d-flex justify-content-center pb-4">
+      <div class="box">
+        <div class="spin-container">
+          <div class="shape">
+            <div class="bd"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="my_text pt-5">
+      <h1>My name is Turkana Mammadova</h1>
+    </div>
+    <div>
+      <h2 class="type-writter pt-3">I am a Designer and Software Developer.</h2>
+    </div>
+  </div>
+</div>
+
+<!--About-->
+<div class="about container-fluid pt-5 pb-5">
+  <div class="row pt-5">
+    <div class="col-lg-5">
+      <div class="grid">
+        <img src="../../assets/images/bg1.jpg" alt="" />
+      </div>
+    </div>
+    <div class="col-lg-2 title">
+      <h2 class="rotate">About</h2>
+      <h2>Me</h2>
+    </div>
+    <div class="col-lg-5 my_infor">
+      <div>
+        <h2 class="pb-2">Hello! I’m Turkana Mammadova</h2>
+        <p>
+          I am passionate about UI/UX design and Web Design. I am a skilled
+          front-end developer and graphic design tools such as Photoshop and
+          Illustrator. I am a quick learner and a team worker that gets the job
+          done. I can easily capitalize on low hanging fruits and quickly
+          maximize timely deliverables for real-time schemas.
+        </p>
+        <span><b>Age:</b> 24</span><br />
+        <span><b>Email:</b> mmmmadova.turkana@gmail.com</span><br />
+        <span><b>Phone:</b> +994 70 404 55 06</span><br />
+        <span><b>Address:</b> Azerbaijan, Baku</span><br />
+        <span><b>Status:</b> Avialable</span><br />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--My History-->
+<div class="history container-fluid pt-5 pb-5">
+  <div class="row pt-5 pb-5">
+    <div class="col-lg-10">
+      <div class="page">
+        <div class="timeline">
+          <div class="timeline__group">
+            <span class="timeline__year time" aria-hidden="true"
+              >2016 - 2020</span
+            >
+            <div class="timeline__cards">
+              <div class="timeline__card card">
+                <header class="card__header">
+                  <time class="time" datetime="2008-02-02">
+                    <span class="time__month"
+                      >Azerbaijan State Oil and Industry University</span
+                    >
+                  </time>
+                </header>
+                <div class="card__content">
+                  <p>
+                    <b>Faculty: </b>Information Texnology Management - Computer
+                    Science
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="timeline__group">
+            <span class="timeline__year time" aria-hidden="true"
+              >2020 - 2023</span
+            >
+            <div class="timeline__cards">
+              <div class="timeline__card card">
+                <header class="card__header">
+                  <time class="time" datetime="2008-07-14">
+                    <span class="time__month">GTSolutions Company</span>
+                  </time>
+                </header>
+                <div class="card__content">
+                  <p><b>Position: </b> Designer And Software Developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2 title">
+      <h2 class="rotate">Education</h2>
+      <h2>Work Experience</h2>
+    </div>
+  </div>
+</div>
+
+<!--Services-->
+<div class="my_service pt-5 pb-5">
+  <h1 class="pb-5">My Services</h1>
+  <div class="d-flex justify-content-around pt-5">
+    <div class="service">
+      <img src="../../assets/images/wb-design.svg" alt="" />
+      <h3 class="pt-5">Web Design</h3>
+    </div>
+    <div class="service">
+      <img src="../../assets/images/graphic-designN.svg" alt="" />
+      <h3 class="pt-5">Graphic Design</h3>
+    </div>
+    <div class="service">
+      <img src="../../assets/images/ui-uxN.svg" alt="" />
+      <h3 class="pt-5" class="pt-5">UI/UX</h3>
+    </div>
+    <div class="service">
+      <img src="../../assets/images/app-developmentN.svg" alt="" />
+      <h3 class="pt-5">Software Development</h3>
+    </div>
+  </div>
+</div>
+
+<!--My Skills-->
+<div class="my_skill container-fluid">
+  <div class="row pt-5">
+    <div class="col-lg-5 ps-5 pe-5">
+      <label for="">HMTL</label>
+      <mat-progress-bar mode="determinate" value="99"></mat-progress-bar><br />
+      <label for="">CSS</label>
+      <mat-progress-bar mode="determinate" value="99"></mat-progress-bar><br />
+      <label for="">JAVASCRIPT</label>
+      <mat-progress-bar mode="determinate" value="70"></mat-progress-bar><br />
+      <label for="">JQUERY</label>
+      <mat-progress-bar mode="determinate" value="60"></mat-progress-bar><br />
+      <label for="">BOOTSTRAP</label>
+      <mat-progress-bar mode="determinate" value="99"></mat-progress-bar><br />
+    </div>
+    <div class="col-lg-2 title">
+      <h2 class="rotate">My</h2>
+      <h2>Skills</h2>
+    </div>
+    <div class="col-lg-5 ps-5 pe-5">
+      <label for="">TYPESCRIPT</label>
+      <mat-progress-bar mode="determinate" value="70"></mat-progress-bar><br />
+      <label for="">ANGULAR</label>
+      <mat-progress-bar mode="determinate" value="70"></mat-progress-bar><br />
+      <label for="">FIGMA</label>
+      <mat-progress-bar mode="determinate" value="99"></mat-progress-bar><br />
+      <label for="">ADOBE PHOTOSHOP</label>
+      <mat-progress-bar mode="determinate" value="70"></mat-progress-bar><br />
+      <label for="">ADOBE ILLUSTRATOR</label>
+      <mat-progress-bar mode="determinate" value="70"></mat-progress-bar><br />
+    </div>
+  </div>
+</div>
+
+<!--My Projects-->
+<div class="projects pt-5">
+  <h1 class="pb-5">My Projects</h1>
+  <div>
+    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center">
+      <mat-tab label="All">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="container">
+            <div class="card">
+              <img src="../../assets/images/cook-love.png" />
+              <div class="card__head">
+                <a href="https://turkana99.github.io/cook-love/home"
+                  >Cook-Love</a
+                >
+              </div>
+            </div>
+            <div class="card">
+              <img src="../../assets/images/trendist.png" />
+              <div class="card__head">
+                <a href="https://turkana99.github.io/Trendist/home">Trendist</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../../assets/images/home-pet.png" />
+              <div class="card__head"><a href="https://turkana99.github.io/homepet/">HomePet</a></div>
+            </div>
+            <div class="card">
+              <img src="../../assets/images/vibrant.png" />
+              <div class="card__head"><a href="">Vibrant</a></div>
+            </div>
+            <div class="card">
+              <img src="../../assets/images/tm-course.png" />
+              <div class="card__head"><a href="">TM-Course</a></div>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="Angular">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="container">
+            <div class="card">
+              <img src="../../assets/images/cook-love.png" />
+              <div class="card__head">
+                <a href="https://turkana99.github.io/cook-love/home"
+                  >Cook-Love</a
+                >
+              </div>
+            </div>
+            <div class="card">
+              <img src="../../assets/images/trendist.png" />
+              <div class="card__head">
+                <a href="https://turkana99.github.io/Trendist/home">Trendist</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../../assets/images/vibrant.png" />
+              <div class="card__head"><a href="">Vibrant</a></div>
+            </div>
+            <div class="card">
+              <img src="../../assets/images/tm-course.png" />
+              <div class="card__head"><a href="">TM-Course</a></div>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="Bootstrap">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="container">
+            <div class="card">
+              <img src="../../assets/images/home-pet.png" />
+              <div class="card__head"><a href="">HomePet</a></div>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="HTML"></mat-tab>
+      <mat-tab label="CSS"></mat-tab>
+      <mat-tab label="JS"></mat-tab>
+    </mat-tab-group>
+  </div>
+</div>
+
+<!--Contact-->
+<section class="contact pt-5" id="contact">
+  <div class="container-fluid pt-5">
+    <div
+      class="main wow fadeInUp"
+      style="visibility: visible; animation-name: fadeInUp"
+    >
+      <div class="row">
+        <div class="col-lg-7 left">
+          <h3>Send Message</h3>
+
+          <form>
+            <div class="row mb-3">
+              <div class="col-sm-6">
+                <input type="text" class="form-control" placeholder="Name" />
+              </div>
+              <div class="col-sm-6">
+                <input type="email" class="form-control" placeholder="Email" />
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea
+                class="form-control"
+                rows="5"
+                id="comment"
+                placeholder="Message"
+              ></textarea>
+            </div><br>
+            <button class="btn btn-block" type="submit">Send Now!</button>
+          </form>
+        </div>
+        <div class="col-lg-2 title">
+          <h2 class="rotate">Contact</h2>
+          <h2>Me</h2>
+        </div>
+        <!-- Left -->
+        <div class="col-lg-3 right-hand">
+          <div class="right">
+            <h2>Contact Information</h2>
+            <div class="info d-flex align-items-center">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>Azerbaijan, <br />Baku</span>
+            </div>
+            <div class="info d-flex align-items-center">
+              <i class="fa fa-chrome" aria-hidden="true"></i>
+              <span>+994 70 404 55 06 </span>
+            </div>
+            <div class="info d-flex align-items-center">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>mmmmadova.turkana@gmail.com </span>
+            </div>
+            <div class="social">
+              <a href="https://github.com/Turkana99">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/turkana-mammadova-b39b07232">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <!-- <a href="https://www.facebook.com/turkana.mammadova.125/">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/turkana.va/">
+                <i class="fa-brands fa-instagram"></i>
+              </a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

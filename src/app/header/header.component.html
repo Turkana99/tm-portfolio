@@ -1,0 +1,74 @@
+<nav
+  class="navbar navbar-expand-lg navbar-light bg-light"s
+  (scroll)="onWindowScroll()"
+>
+  <div class="container-fluid">
+    <div class="d-flex justify-content-between">
+      <div class="my_logo">
+        <img src="../../assets/images/LogoN2.png" alt="" />
+      </div>
+      <!-- <div class="my_title"><a class="navbar-brand" href="#">Turkana Mammadova</a></div> -->
+    </div>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav d-flex justify-content-end">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLinkActiveOptions]="{ exact: true }"
+            routerLinkActive="router-link-active"
+            routerLink="home"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLinkActiveOptions]="{ exact: true }"
+            routerLinkActive="router-link-active"
+            routerLink="about"
+            >About</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLinkActiveOptions]="{ exact: true }"
+            routerLinkActive="router-link-active"
+            routerLink="about"
+            >Education & Work Experience</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLinkActiveOptions]="{ exact: true }"
+            routerLinkActive="router-link-active"
+            routerLink="projects"
+            >Projects</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLinkActiveOptions]="{ exact: true }"
+            routerLinkActive="router-link-active"
+            routerLink="contact"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

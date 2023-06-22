@@ -1,0 +1,80 @@
+.copyright{
+  background-color: #63B1D3!important;
+}
+.container-fluid{
+  padding:0px!important;
+  border-radius: none;
+}
+.card{
+  padding: 4% 7%;
+  color: #646771;
+  background-color: black;
+  border-radius: 0px!important;
+  line-height: 35px;
+  font-family: 'Roboto', sans-serif!important;
+}
+.card-text{
+  padding-top: 10px;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul >li{
+  padding: 4px;
+}
+
+ul > li:hover{
+  color:white;
+  cursor: pointer;
+}
+
+hr{
+  border-width: 3px;
+}
+
+.social > i{
+  padding: 1%;
+  font-size: 15px;
+}
+
+.social > i:hover{
+  color:white;
+  cursor:pointer;
+}
+
+.policy > div{
+  padding: 4px;
+}
+
+.heading{
+  font-family: 'Titillium Web', sans-serif;
+  color: #63B1D3;
+  padding-bottom: 10px;
+}
+
+.divider{
+  border-top: 2px solid rgba(189, 196, 203, 0.5);;
+}
+
+.frs_title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px !important;
+  color: white !important;
+  font-weight: bold;
+}
+
+.scd_title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  color: #63B1D3 !important;
+  font-weight: bold;
+}
+
+.my_logo img{
+  width:75px;
+  height: 70px;
+}
