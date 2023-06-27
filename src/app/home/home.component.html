@@ -380,13 +380,31 @@
         <div class="col-lg-7 left">
           <h3>Send Message</h3>
 
-          <form>
+          <form [formGroup]="contactForm"
+          (ngSubmit)="Send()">
             <div class="row mb-3">
               <div class="col-sm-6">
-                <input type="text" class="form-control" placeholder="Name" />
+                <input type="text" class="form-control" placeholder="Name" formControlName="name" />
+                <p
+                *ngIf="contactForm.controls['name'].errors?.['required'] && ((contactForm.controls['name'].dirty &&
+            contactForm.controls['name'].invalid) ||
+          contactForm.controls['name'].touched)"
+                >*This field should not be empty</p
+              >
               </div>
               <div class="col-sm-6">
-                <input type="email" class="form-control" placeholder="Email" />
+                <input type="email" class="form-control" placeholder="Email" formControlName="email" />
+                <p
+                *ngIf="contactForm.controls['email'].errors?.['required'] && ((contactForm.controls['email'].dirty &&
+              contactForm.controls['email'].invalid) ||
+            contactForm.controls['email'].touched)"
+                >*This field should not be empty</p
+              >
+              <p *ngIf="contactForm.controls['email'].errors?.['email'] && ((contactForm.controls['email'].dirty &&
+              contactForm.controls['email'].invalid) ||
+            contactForm.controls['email'].touched)"
+                >*Please provide a valid email address</p
+              >
               </div>
             </div>
             <div class="form-group">
@@ -395,7 +413,18 @@
                 rows="5"
                 id="comment"
                 placeholder="Message"
+                formControlName="message"
               ></textarea>
+              <p
+              *ngIf="contactForm.controls['message'].errors?.['required'] && ((contactForm.controls['message'].dirty &&
+          contactForm.controls['message'].invalid) ||
+        contactForm.controls['message'].touched)"
+              >*This field should not be empty</p
+            >
+            <p
+              *ngIf="contactForm.controls['message'].errors?.['maxlength']"
+              >*Your message can't exceed 250 characters</p
+            >
             </div>
             <br />
             <button class="btn btn-block" type="submit">Send Now!</button>
