@@ -1,7 +1,12 @@
 <!--Jumbotron-->
 <div class="jumbotron container-fluid d-flex flex-column align-items-center">
   <div class="my_video">
-    <video  loop="true" #myVideo (canplay)="myVideo.play()" (loadedmetadata)="myVideo.muted=true">
+    <video
+      loop="true"
+      #myVideo
+      (canplay)="myVideo.play()"
+      (loadedmetadata)="myVideo.muted = true"
+    >
       <source src="../../assets/images/video1.mp4" type="video/mp4" />
       Your browser does not support HTML5 video.
     </video>
@@ -207,7 +212,9 @@
             </div>
             <div class="card">
               <img src="../../assets/images/home-pet.png" />
-              <div class="card__head"><a href="https://turkana99.github.io/homepet/">HomePet</a></div>
+              <div class="card__head">
+                <a href="https://turkana99.github.io/homepet/">HomePet</a>
+              </div>
             </div>
             <div class="card">
               <img src="../../assets/images/vibrant.png" />
@@ -247,6 +254,12 @@
               <img src="../../assets/images/tm-course.png" />
               <div class="card__head"><a href="">TM-Course</a></div>
             </div>
+            <div class="card">
+              <img src="../../assets/images/treaveller.png" />
+              <div class="card__head">
+                <a href="https://turkana99.github.io/Traveller/">TM-Course</a>
+              </div>
+            </div>
           </div>
         </div>
       </mat-tab>
@@ -262,8 +275,95 @@
           </div>
         </div>
       </mat-tab>
-      <mat-tab label="HTML"></mat-tab>
-      <mat-tab label="CSS"></mat-tab>
+      <mat-tab label="HTML/CSS">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="container">
+            <div class="card">
+              <img src="../../assets/images/book.png" />
+              <div class="card__head">
+                <a href="https://turkana99.github.io/book-publisher/"
+                  >Book Publisher</a
+                >
+              </div>
+            </div>
+            <div class="card">
+              <img src="../../assets/images/online.png" />
+              <div class="card__head">
+                <a href="https://turkana99.github.io/online-updates/"
+                  >Online-Updates</a
+                >
+              </div>
+            </div>
+            <div class="card">
+              <img src="../../assets/images/northgate.png" />
+              <div class="card__head">
+                <a href="https://turkana99.github.io/northgate-states/"
+                  >Northgate-States</a
+                >
+              </div>
+            </div>
+            <div class="card">
+              <img src="../../assets/images/winslow.png" />
+              <div class="card__head">
+                <a href="https://turkana99.github.io/winslow-news/"
+                  >Winslow-News</a
+                >
+              </div>
+            </div>
+            <div class="card">
+              <img src="../../assets/images/freemont.png" />
+              <div class="card__head">
+                <a href="https://turkana99.github.io//freemont/">Freemont</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Part 2-->
+        <div
+        class="d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="container ps-5">
+          <div class="card">
+            <img src="../../assets/images/best.png" />
+            <div class="card__head">
+              <a href="https://turkana99.github.io//best-release/"
+                >Best Release</a
+              >
+            </div>
+          </div>
+          <div class="card">
+            <img src="../../assets/images/beechtown.png" />
+            <div class="card__head">
+              <a href="https://turkana99.github.io//beechtown-paper/"
+                >Beechtown Paper</a
+              >
+            </div>
+          </div>
+          <div class="card">
+            <img src="../../assets/images/nordiv.png" />
+            <div class="card__head">
+              <a href="https://turkana99.github.io/nordic/"
+                >Nordic</a
+              >
+            </div>
+          </div>
+          <div class="card">
+            <img src="../../assets/images/beoreo.png" />
+            <div class="card__head">
+              <a href="https://turkana99.github.io//beoreo/">Beoreo</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="../../assets/images/beauty.png" />
+            <div class="card__head">
+              <a href="https://turkana99.github.io//beauty/">The Beauty</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </mat-tab>
       <mat-tab label="JS"></mat-tab>
     </mat-tab-group>
   </div>
@@ -296,7 +396,8 @@
                 id="comment"
                 placeholder="Message"
               ></textarea>
-            </div><br>
+            </div>
+            <br />
             <button class="btn btn-block" type="submit">Send Now!</button>
           </form>
         </div>
