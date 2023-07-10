@@ -1,5 +1,8 @@
 <!--Jumbotron-->
-<div class="jumbotron container-fluid d-flex flex-column align-items-center">
+<div
+  class="jumbotron container-fluid d-flex flex-column align-items-center justify-content-center"
+>
+  <!--My Video-->
   <div class="my_video">
     <video
       loop="true"
@@ -45,30 +48,53 @@
 <!--About-->
 <div class="about container-fluid pt-5 pb-5">
   <div class="row pt-5">
-    <div class="col-lg-5">
+    <div
+      class="col-lg-5"
+      data-aos="zoom-in"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+    >
       <div class="grid">
         <img src="../../assets/images/bg1.jpg" alt="" />
       </div>
     </div>
-    <div class="col-lg-2 title">
+    <div
+      class="col-lg-2 title"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cybic"
+      data-aos-duration="2000"
+    >
       <h2 class="rotate">About</h2>
       <h2>Me</h2>
     </div>
-    <div class="col-lg-5 my_infor">
-      <div>
+    <div
+      class="col-lg-5 my_infor"
+      data-aos="zoom-in"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+    >
+      <div class="ps-3">
         <h2 class="pb-2">Hello! I’m Turkana Mammadova</h2>
         <p>
-          I am passionate about UI/UX design and Web Design. I am a skilled
-          front-end developer and graphic design tools such as Photoshop and
-          Illustrator. I am a quick learner and a team worker that gets the job
-          done. I can easily capitalize on low hanging fruits and quickly
-          maximize timely deliverables for real-time schemas.
+          I am highly skilled and innovative designer with a strong background
+          in software development. Proficient in designing user interfaces (UI)
+          and user experiences (UX) while also prosessing a deep understanding
+          of programming languages and software development methodologies.
+          Commited to delivering visually appealing and functional software
+          solitions.
         </p>
-        <span><b>Age:</b> 24</span><br />
+        <span><b>Age:</b> {{ age }}</span
+        ><br />
         <span><b>Email:</b> mmmmadova.turkana@gmail.com</span><br />
         <span><b>Phone:</b> +994 70 404 55 06</span><br />
         <span><b>Address:</b> Azerbaijan, Baku</span><br />
-        <span><b>Status:</b> Avialable</span><br />
+        <span
+          ><b>Linkedin:</b>&nbsp;<a
+            href="https://www.linkedin.com/in/TurkanaMammadova"
+          >
+            https://www.linkedin.com/in/TurkanaMammadova</a
+          ></span
+        ><br />
       </div>
     </div>
   </div>
@@ -77,8 +103,13 @@
 <!--My History-->
 <div class="history container-fluid pt-5 pb-5">
   <div class="row pt-5 pb-5">
-    <div class="col-lg-10">
-      <div class="page">
+    <div
+      class="col-lg-10"
+      data-aos="zoom-in"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+    >
+      <div class="page d-flex justify-content-around">
         <div class="timeline">
           <div class="timeline__group">
             <span class="timeline__year time" aria-hidden="true"
@@ -115,6 +146,12 @@
                 </header>
                 <div class="card__content">
                   <p><b>Position: </b> Designer And Software Developer</p>
+                  <p>Collaborated with cross-functional teams to gather software requirements and translate them into scalable and efficient software solutions.
+                    Designed and developed responsive user interfaces (UI) and implement intuitive user experiences (UX) for web and mobile applications.
+                    Write clean, well-structured code using programming languages such as HTML/CSS and Angular.
+                    Conduct thorough testing and debugging of software applications to ensure high-quality deliverables.
+                    Continuously research and implement emerging technologies and best practices to enhance software development processes.
+                    Work closely with clients to understand their business needs and provide innovative software solutions that align with their objectives.</p>
                 </div>
               </div>
             </div>
@@ -122,7 +159,12 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-2 title">
+    <div
+      class="col-lg-2 title titleEdu"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cybic"
+      data-aos-duration="2000"
+    >
       <h2 class="rotate">Education</h2>
       <h2>Work Experience</h2>
     </div>
@@ -130,24 +172,59 @@
 </div>
 
 <!--Services-->
-<div class="my_service pt-5 pb-5">
-  <h1 class="pb-5">My Services</h1>
-  <div class="d-flex justify-content-around pt-5">
-    <div class="service">
-      <img src="../../assets/images/wb-design.svg" alt="" />
-      <h3 class="pt-5">Web Design</h3>
+<div class="my_service container-fluid pt-5 pb-5">
+  <div class="row px-5">
+    <h1
+      class="pb-5"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cybic"
+      data-aos-duration="2000"
+    >
+      My Services
+    </h1>
+    <div
+      class="col-lg-3 col-sm-6 col-12 pt-5"
+      data-aos="zoom-in"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+    >
+      <div class="service">
+        <img src="../../assets/images/wb-design.svg" alt="" />
+        <h3 class="pt-4">Web Design</h3>
+      </div>
     </div>
-    <div class="service">
-      <img src="../../assets/images/graphic-designN.svg" alt="" />
-      <h3 class="pt-5">Graphic Design</h3>
+    <div
+      class="col-lg-3 col-sm-6 col-12 pt-5"
+      data-aos="zoom-in"
+      data-aos-easing="linear"
+      data-aos-duration="1900"
+    >
+      <div class="service">
+        <img src="../../assets/images/graphic-designN.svg" alt="" />
+        <h3 class="pt-4">Graphic Design</h3>
+      </div>
     </div>
-    <div class="service">
-      <img src="../../assets/images/ui-uxN.svg" alt="" />
-      <h3 class="pt-5" class="pt-5">UI/UX</h3>
+    <div
+      class="col-lg-3 col-sm-6 col-12 pt-5"
+      data-aos="zoom-in"
+      data-aos-easing="linear"
+      data-aos-duration="2300"
+    >
+      <div class="service">
+        <img src="../../assets/images/ui-uxN.svg" alt="" />
+        <h3 class="pt-4">UI/UX</h3>
+      </div>
     </div>
-    <div class="service">
-      <img src="../../assets/images/app-developmentN.svg" alt="" />
-      <h3 class="pt-5">Software Development</h3>
+    <div
+      class="col-lg-3 col-sm-6 col-12 pt-5"
+      data-aos="zoom-in"
+      data-aos-easing="linear"
+      data-aos-duration="2700"
+    >
+      <div class="service">
+        <img src="../../assets/images/soft.svg" alt="" />
+        <h3 class="pt-4">Software Development</h3>
+      </div>
     </div>
   </div>
 </div>
@@ -155,32 +232,107 @@
 <!--My Skills-->
 <div class="my_skill container-fluid">
   <div class="row pt-5">
-    <div class="col-lg-5 ps-5 pe-5">
-      <label for="">HMTL</label>
+    <div
+      class="col-lg-5 ps-5 pe-5"
+      data-aos="zoom-in"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+    >
+      <label
+        for=""
+        data-aos="zoom-in"
+        data-aos-easing="linear"
+        data-aos-duration="2000"
+        >HMTL</label
+      >
       <mat-progress-bar mode="determinate" value="99"></mat-progress-bar><br />
-      <label for="">CSS</label>
+      <label
+        for=""
+        data-aos="zoom-in"
+        data-aos-easing="linear"
+        data-aos-duration="2100"
+        >CSS</label
+      >
       <mat-progress-bar mode="determinate" value="99"></mat-progress-bar><br />
-      <label for="">JAVASCRIPT</label>
+      <label
+        for=""
+        data-aos="zoom-in"
+        data-aos-easing="linear"
+        data-aos-duration="2200"
+        >JAVASCRIPT</label
+      >
       <mat-progress-bar mode="determinate" value="70"></mat-progress-bar><br />
-      <label for="">JQUERY</label>
+      <label
+        for=""
+        data-aos="zoom-in"
+        data-aos-easing="linear"
+        data-aos-duration="2300"
+        >JQUERY</label
+      >
       <mat-progress-bar mode="determinate" value="60"></mat-progress-bar><br />
-      <label for="">BOOTSTRAP</label>
+      <label
+        for=""
+        data-aos="zoom-in"
+        data-aos-easing="linear"
+        data-aos-duration="2400"
+        >BOOTSTRAP</label
+      >
       <mat-progress-bar mode="determinate" value="99"></mat-progress-bar><br />
     </div>
-    <div class="col-lg-2 title">
+    <div
+      class="col-lg-2 title"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cybic"
+      data-aos-duration="2000"
+    >
       <h2 class="rotate">My</h2>
       <h2>Skills</h2>
     </div>
-    <div class="col-lg-5 ps-5 pe-5">
-      <label for="">TYPESCRIPT</label>
+    <div
+      class="col-lg-5 ps-5 pe-5"
+      data-aos="zoom-in"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+    >
+      <label
+        for=""
+        data-aos="zoom-in"
+        data-aos-easing="linear"
+        data-aos-duration="2000"
+        >TYPESCRIPT</label
+      >
       <mat-progress-bar mode="determinate" value="70"></mat-progress-bar><br />
-      <label for="">ANGULAR</label>
+      <label
+        for=""
+        data-aos="zoom-in"
+        data-aos-easing="linear"
+        data-aos-duration="2100"
+        >ANGULAR</label
+      >
       <mat-progress-bar mode="determinate" value="70"></mat-progress-bar><br />
-      <label for="">FIGMA</label>
+      <label
+        for=""
+        data-aos="zoom-in"
+        data-aos-easing="linear"
+        data-aos-duration="2200"
+        >FIGMA</label
+      >
       <mat-progress-bar mode="determinate" value="99"></mat-progress-bar><br />
-      <label for="">ADOBE PHOTOSHOP</label>
+      <label
+        for=""
+        data-aos="zoom-in"
+        data-aos-easing="linear"
+        data-aos-duration="2300"
+        >ADOBE PHOTOSHOP</label
+      >
       <mat-progress-bar mode="determinate" value="70"></mat-progress-bar><br />
-      <label for="">ADOBE ILLUSTRATOR</label>
+      <label
+        for=""
+        data-aos="zoom-in"
+        data-aos-easing="linear"
+        data-aos-duration="2400"
+        >ADOBE ILLUSTRATOR</label
+      >
       <mat-progress-bar mode="determinate" value="70"></mat-progress-bar><br />
     </div>
   </div>
@@ -188,9 +340,22 @@
 
 <!--My Projects-->
 <div class="projects pt-5">
-  <h1 class="pb-5">My Projects</h1>
+  <h1
+    class="pb-5"
+    data-aos="flip-left"
+    data-aos-easing="ease-out-cybic"
+    data-aos-duration="2000"
+  >
+    My Projects
+  </h1>
   <div>
-    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center">
+    <mat-tab-group
+      mat-stretch-tabs="false"
+      mat-align-tabs="center"
+      data-aos="zoom-in"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+    >
       <mat-tab label="All">
         <div
           class="d-flex flex-column justify-content-center align-items-center"
@@ -322,47 +487,45 @@
         </div>
         <!--Part 2-->
         <div
-        class="d-flex flex-column justify-content-center align-items-center"
-      >
-        <div class="container ps-5">
-          <div class="card">
-            <img src="../../assets/images/best.png" />
-            <div class="card__head">
-              <a href="https://turkana99.github.io//best-release/"
-                >Best Release</a
-              >
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="container ps-5">
+            <div class="card">
+              <img src="../../assets/images/best.png" />
+              <div class="card__head">
+                <a href="https://turkana99.github.io//best-release/"
+                  >Best Release</a
+                >
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <img src="../../assets/images/beechtown.png" />
-            <div class="card__head">
-              <a href="https://turkana99.github.io//beechtown-paper/"
-                >Beechtown Paper</a
-              >
+            <div class="card">
+              <img src="../../assets/images/beechtown.png" />
+              <div class="card__head">
+                <a href="https://turkana99.github.io//beechtown-paper/"
+                  >Beechtown Paper</a
+                >
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <img src="../../assets/images/nordiv.png" />
-            <div class="card__head">
-              <a href="https://turkana99.github.io/nordic/"
-                >Nordic</a
-              >
+            <div class="card">
+              <img src="../../assets/images/nordiv.png" />
+              <div class="card__head">
+                <a href="https://turkana99.github.io/nordic/">Nordic</a>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <img src="../../assets/images/beoreo.png" />
-            <div class="card__head">
-              <a href="https://turkana99.github.io//beoreo/">Beoreo</a>
+            <div class="card">
+              <img src="../../assets/images/beoreo.png" />
+              <div class="card__head">
+                <a href="https://turkana99.github.io//beoreo/">Beoreo</a>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <img src="../../assets/images/beauty.png" />
-            <div class="card__head">
-              <a href="https://turkana99.github.io//beauty/">The Beauty</a>
+            <div class="card">
+              <img src="../../assets/images/beauty.png" />
+              <div class="card__head">
+                <a href="https://turkana99.github.io//beauty/">The Beauty</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </mat-tab>
       <mat-tab label="JS"></mat-tab>
     </mat-tab-group>
@@ -377,34 +540,52 @@
       style="visibility: visible; animation-name: fadeInUp"
     >
       <div class="row">
-        <div class="col-lg-7 left">
+        <div
+          class="col-lg-7 left"
+          data-aos="zoom-in"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <h3>Send Message</h3>
 
-          <form [formGroup]="contactForm"
-          (ngSubmit)="Send()">
+          <form [formGroup]="contactForm" (ngSubmit)="Send()">
             <div class="row mb-3">
               <div class="col-sm-6">
-                <input type="text" class="form-control" placeholder="Name" formControlName="name" />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Name"
+                  formControlName="name"
+                />
                 <p
-                *ngIf="contactForm.controls['name'].errors?.['required'] && ((contactForm.controls['name'].dirty &&
+                  *ngIf="contactForm.controls['name'].errors?.['required'] && ((contactForm.controls['name'].dirty &&
             contactForm.controls['name'].invalid) ||
           contactForm.controls['name'].touched)"
-                >*This field should not be empty</p
-              >
+                >
+                  *This field should not be empty
+                </p>
               </div>
               <div class="col-sm-6">
-                <input type="email" class="form-control" placeholder="Email" formControlName="email" />
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email"
+                  formControlName="email"
+                />
                 <p
-                *ngIf="contactForm.controls['email'].errors?.['required'] && ((contactForm.controls['email'].dirty &&
+                  *ngIf="contactForm.controls['email'].errors?.['required'] && ((contactForm.controls['email'].dirty &&
               contactForm.controls['email'].invalid) ||
             contactForm.controls['email'].touched)"
-                >*This field should not be empty</p
-              >
-              <p *ngIf="contactForm.controls['email'].errors?.['email'] && ((contactForm.controls['email'].dirty &&
+                >
+                  *This field should not be empty
+                </p>
+                <p
+                  *ngIf="contactForm.controls['email'].errors?.['email'] && ((contactForm.controls['email'].dirty &&
               contactForm.controls['email'].invalid) ||
             contactForm.controls['email'].touched)"
-                >*Please provide a valid email address</p
-              >
+                >
+                  *Please provide a valid email address
+                </p>
               </div>
             </div>
             <div class="form-group">
@@ -416,26 +597,36 @@
                 formControlName="message"
               ></textarea>
               <p
-              *ngIf="contactForm.controls['message'].errors?.['required'] && ((contactForm.controls['message'].dirty &&
+                *ngIf="contactForm.controls['message'].errors?.['required'] && ((contactForm.controls['message'].dirty &&
           contactForm.controls['message'].invalid) ||
         contactForm.controls['message'].touched)"
-              >*This field should not be empty</p
-            >
-            <p
-              *ngIf="contactForm.controls['message'].errors?.['maxlength']"
-              >*Your message can't exceed 250 characters</p
-            >
+              >
+                *This field should not be empty
+              </p>
+              <p *ngIf="contactForm.controls['message'].errors?.['maxlength']">
+                *Your message can't exceed 250 characters
+              </p>
             </div>
             <br />
             <button class="btn btn-block" type="submit">Send Now!</button>
           </form>
         </div>
-        <div class="col-lg-2 title">
+        <div
+          class="col-lg-2 title"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cybic"
+          data-aos-duration="2000"
+        >
           <h2 class="rotate">Contact</h2>
           <h2>Me</h2>
         </div>
         <!-- Left -->
-        <div class="col-lg-3 right-hand">
+        <div
+          class="col-lg-3 right-hand"
+          data-aos="zoom-in"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <div class="right">
             <h2>Contact Information</h2>
             <div class="info d-flex align-items-center">

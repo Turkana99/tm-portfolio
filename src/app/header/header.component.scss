@@ -5,6 +5,7 @@
   font-weight: 300;
   font-size: 18px;
 }
+
 .router-link-active {
   color: #63B1D3 !important;
   font-weight: bold;
@@ -44,5 +45,8 @@ color: #63B1D3!important;
 .navbar-inverse {
     width: 100% !important;
     background-color: black!important;
-    transition: 0.4s;
+    transition: 1s;
+}
+.navbar-light .navbar-toggler-icon{
+  background-image: url(../../assets/images/menu.svg)!important;
 }

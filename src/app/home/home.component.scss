@@ -29,9 +29,7 @@ body {
 }
 
 .my_info {
-  position: absolute;
-  top: 26%;
-  left: 35%;
+  position: relative;
   text-align: center !important;
 }
 
@@ -143,6 +141,9 @@ body {
 .about {
   background-color: black;
 }
+.about a {
+  color: #63b1d3!important;
+}
 .my_infor h2,
 span {
   color: white;
@@ -206,10 +207,12 @@ span {
   overflow-x: hidden;
 }
 .history .title {
-  height: 60vh;
-  padding-right: 80px;
+  display: grid;
+  color: #63b1d3;
+  justify-content: center!important;
+  align-items: center;
+  grid-template-columns: max-content max-content;
 }
-
 /*
 !!!!
 This pen is being refactored
@@ -271,7 +274,7 @@ skin
 */
 
 .time {
-  padding: var(--timePadding, 0.25rem 1.25rem 0.25rem);
+
   background-color: #63b1d3;
   font-size: var(--timeFontSize, 0.75rem);
   font-weight: var(--timeFontWeight, 700);
@@ -327,6 +330,7 @@ CORE STYLES
 */
 
 .timeline {
+  width: 90%;
   display: var(--timelineDisplay, grid);
   grid-row-gap: var(--timelineGroupsGap, 2rem);
 }
@@ -380,13 +384,14 @@ SKIN
   overflow: hidden;
   padding-top: 0.25rem; /* 1 */
   padding-bottom: 0.25rem; /* 1 */
-
 }
-.timeline__card{
+
+.timeline__card {
   background-color: black;
   border: 1px solid #63b1d3;
   color: white;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px!important;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px !important;
 }
 
 .timeline__card::before {
@@ -402,7 +407,6 @@ SKIN
   left: -50%;
   z-index: -1;
 }
-
 
 /*
 =====
@@ -431,7 +435,7 @@ p:last-child {
 }
 
 .page {
-  padding: 0px 80px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -534,8 +538,8 @@ p:last-child {
 /*My Services*/
 .my_service {
   background-color: black;
-  text-align: center;
-  padding: 0px 200px;
+  text-align: center!important;
+  overflow-x: hidden!important;
 }
 
 .my_service h1 {
@@ -555,7 +559,13 @@ p:last-child {
   h3 {
     color: #63b1d3 !important;
   }
+  img{
+    fill:#63b1d3!important;
+  }
 }
+
+
+
 
 /*My Skills*/
 .my_skill {
@@ -579,6 +589,7 @@ p:last-child {
   width: 100%;
   background-color: black;
   color: white;
+  overflow-x:hidden!important;
 }
 
 .projects h1 {
@@ -590,7 +601,8 @@ p:last-child {
 }
 
 /* Styles for the active tab label */
-::ng-deep .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active
+::ng-deep
+  .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active
   .mdc-tab__text-label,
 .mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active
   .mdc-tab__text-label {
@@ -638,6 +650,7 @@ p:last-child {
 
     &:hover {
       flex-grow: 10;
+      padding: var(--timelineCardPadding, 1.5rem 0.5rem 1.25rem);
       img {
         filter: grayscale(0);
       }
@@ -667,7 +680,6 @@ p:last-child {
   }
 }
 
-
 /*Contact*/
 
 .contact {
@@ -696,7 +708,7 @@ p:last-child {
 }
 .contact .main {
   background: black;
-  box-shadow: 1px 1px 20px 0 rgba(0,0,0,0.08);
+  box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.08);
 }
 .contact .main h3 {
   font-size: 20px;
@@ -725,7 +737,7 @@ p:last-child {
   padding: 40px 60px;
 }
 .contact .main .right {
-  background:#63b1d3;
+  background: #63b1d3;
   background-size: cover;
   padding: 60px;
   color: #ffffff;
@@ -754,11 +766,11 @@ p:last-child {
   color: #ffffff;
   margin-right: 20px;
 }
-.contact .right-hand{
-  padding: 0px!important;
+.contact .right-hand {
+  padding: 0px !important;
 }
 
-.left p{
+.left p {
   color: red;
   font-style: italic;
   font-family: "Rokkitt", serif;
